@@ -1,0 +1,197 @@
+:root {
+  --bg: #faf3e0;
+  --txt: #333;
+  --accent: #f28c8c;
+  --card: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+  --bg: #2e2e2e;
+  --txt: #eee;
+  --accent: #8cb3f2;
+  --card: #3a3a3a;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--txt);
+}
+
+header {
+  background: var(--card);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.tab {
+  text-decoration: none;
+  color: var(--txt);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.tab.active,
+.tab:hover {
+  background: var(--accent);
+  color: white;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+main {
+  padding: 2rem;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.visible {
+  display: block;
+}
+
+.box {
+  background: var(--card);
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow);
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-4px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.note-area {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.note-area input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+}
+
+.note-area button {
+  padding: 0.8rem 1.2rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Get in Touch Section Styling */
+.contactForm {
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.contactForm h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: border-color 0.3s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contactForm button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #005fa3;
+}
+
+.product-card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow);
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--card);
+  box-shadow: 0 -2px 10px var(--shadow);
+}
