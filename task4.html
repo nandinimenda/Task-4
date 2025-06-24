@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandini Menda | Developer</title>
+  <link rel="stylesheet" href="task4.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Nandini Menda</div>
+      <ul class="menu">
+        <li><a href="#" class="tab active" data-section="portfolio">Portfolio</a></li>
+        <li><a href="#" class="tab" data-section="notes">Notes</a></li>
+        <li><a href="#" class="tab" data-section="products">Shop</a></li>
+        <li><button id="themeToggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section visible">
+      <div class="intro">
+        <h2>👩‍💻 Who Am I?</h2>
+        <div class="box">
+          Passionate CSE student with strong academic credentials (8.5 CGPA), expertise in Python, Django, SQL, and front-end tech. Enjoys turning complex problems into clean code and real solutions. Looking for hands-on software/web dev internships.
+        </div>
+      </div>
+      <div class="projects">
+        <h2>🚀 Projects</h2>
+        <div class="box">📚 <b>Academic Records CLI</b>: Python + MySQL based terminal app with full CRUD & search.</div>
+        <div class="box">🌍 <b>Portfolio Site</b>: Fully responsive design + GitHub integration.</div>
+        <div class="box">🐾 <b>Pet Store WebApp</b>: Django framework with full cart/order/user auth system.</div>
+      </div>
+      <div class="skills">
+        <h2>🧠 Skills</h2>
+        <div class="grid">
+          <div class="box">Languages: Python, C, C++, Java</div>
+          <div class="box">Frontend: HTML5, CSS3, JS, Django</div>
+          <div class="box">Databases: MySQL, SQLite</div>
+          <div class="box">CS Concepts: DSA, DBMS, OS, OOP</div>
+        </div>
+      </div>
+      <div id="contact" class="sub-section">
+        <h2>📬 Get in Touch</h2>
+        <form class="contactForm">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes" class="content-section">
+      <h2>📝 Quick Notes</h2>
+      <div class="note-area">
+        <input type="text" id="noteText" placeholder="Write something..." />
+        <button id="addBtn">Add</button>
+        <div id="notesContainer"></div>
+      </div>
+    </section>
+
+    <!-- Product Listing Section -->
+    <section id="products" class="content-section">
+      <h2>🛒 Featured Items</h2>
+      <div class="filters">
+        <select id="filterCat">
+          <option value="all">All</option>
+          <option value="gadgets">Gadgets</option>
+          <option value="style">Style</option>
+        </select>
+        <select id="sortProducts">
+          <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+      <div id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Nandini Menda | Coded with ❤️
+  </footer>
+
+  <script src="task4.js"></script>
+</body>
+</html>
